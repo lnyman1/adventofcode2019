@@ -5,16 +5,26 @@ Advent of Code
 
 Solutions
 ---------
-<details><summary>2019 (Python)</summary>
 
 An example of how to run solutions:
 
 ~~~ 
-python3 DayOne.py DayOneInput.txt
+export SESSION=<Session token for advent of code login>
+python3 1.py
 ~~~ 
 
-*   **Day 1** - The Tyranny of the Rocket Equation :           *([code][19d1c])*
+Generate a new day template:
 
-[19d1c]: nineteen/dayone/DayOne.py
+~~~
+./adventofcode2019/nineteen/new_day_generator.sh -d 1
+~~~
+
+<details><summary>2019 (Python)</summary>
+
+*   **Day 1** - The Tyranny of the Rocket Equation :           *([code][19d1c])*
+*   **Day 2** - TBC :                                          *([code][19d2c])*
+
+[19d1c]: 2019/1/1.py
+[19d2c]: 2019/2/2.py
 
 </details>
