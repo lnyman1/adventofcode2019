@@ -3,9 +3,6 @@ Advent of Code
 
 **Warning: Contains Spoilers**
 
-Solutions
----------
-
 An example of how to run solutions:
 
 ~~~ 
@@ -18,6 +15,9 @@ Generate a new day template:
 ~~~
 ./adventofcode2019/nineteen/new_day_generator.sh -d 1
 ~~~
+
+Solutions
+---------
 
 <details><summary>2019 (Python)</summary>
 
