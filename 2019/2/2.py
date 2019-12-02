@@ -2,6 +2,10 @@ import os
 import requests
 import requests_cache
 
+ops = {
+    1: lambda a, b: a + b,
+    2: lambda a, b: a * b
+}
 
 def part1(lines):
     # position 1 with the value 12 and replace position 2 with the value 2
@@ -19,7 +23,6 @@ def part2(lines):
             if lines[0] == 19690720:
                 return 100 * i + j
 
-
 def operation(lines, noun, verb):
     numbers = [int(x) for x in lines]
     numbers[1] = noun
@@ -34,12 +37,8 @@ def operation(lines, noun, verb):
         idx1 = numbers[i + 1]
         idx2 = numbers[i + 2]
         output_pos = numbers[i + 3]
+        numbers[output_pos] = ops[opcode](numbers[idx1], numbers[idx2])
 
-        if opcode == 1:
-            numbers[output_pos] = numbers[idx1] + numbers[idx2]
-
-        elif opcode == 2:
-            numbers[output_pos] = numbers[idx1] * numbers[idx2]
 
 def get_input_file():
     requests_cache.install_cache('../cache')
