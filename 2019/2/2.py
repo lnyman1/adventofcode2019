@@ -41,8 +41,6 @@ def operation(lines, noun, verb):
         elif opcode == 2:
             numbers[output_pos] = numbers[idx1] * numbers[idx2]
 
-    return numbers
-
 def get_input_file():
     requests_cache.install_cache('../cache')
     url = 'https://adventofcode.com/' + os.path.abspath(__file__).split('/')[-3] + '/day/' + __file__.split('.')[
