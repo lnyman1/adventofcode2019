@@ -22,7 +22,7 @@ Solutions
 <details><summary>2019 (Python)</summary>
 
 *   **Day 1** - The Tyranny of the Rocket Equation :           *([code][19d1c])*
-*   **Day 2** - TBC :                                          *([code][19d2c])*
+*   **Day 2** - 1202 Program Alarm :                           *([code][19d2c])*
 
 [19d1c]: 2019/1/1.py
 [19d2c]: 2019/2/2.py
