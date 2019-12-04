@@ -15,14 +15,14 @@ def part1(lines):
     origin = (0, 0)
     result = crossed_wire_calc(lines, origin)
     crossings = set(result[0]).intersection(set(result[1]))
-    return min([manhatten_dist(coord, origin) for coord in crossings])
+    return min(manhatten_dist(coord, origin) for coord in crossings)
 
 
 def part2(lines):
     origin = (0, 0)
     result = crossed_wire_calc(lines, origin)
     crossings = set(result[0]).intersection(set(result[1]))
-    return min([result[0][coord] + result[1][coord] for coord in crossings])
+    return min(result[0][coord] + result[1][coord] for coord in crossings)
 
 
 def crossed_wire_calc(lines, origin):
