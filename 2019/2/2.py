@@ -42,8 +42,8 @@ def operation(lines, noun, verb):
 
 def get_input_file():
     requests_cache.install_cache('../cache')
-    url = 'https://adventofcode.com/' + os.path.abspath(__file__).split('/')[-3] + '/day/' + __file__.split('.')[
-        0] + '/input'
+    path = os.path.abspath(__file__).split('/')
+    url = 'https://adventofcode.com/' + path[-3] + '/day/' + path[-2] + '/input'
     lines = requests.get(url, cookies={"session": os.environ['SESSION']}).text.strip().split(",")
     return lines
 
