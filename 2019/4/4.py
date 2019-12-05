@@ -1,30 +1,52 @@
-import os
-import requests
-import requests_cache
+from collections import Counter
 
 
-def part1(lines):
-    for line in lines:
-        print(line)
+def part1(lower, upper):
+    possibilities = set()
+    for i in range(lower, upper, 1):
+        if rulesPart1(i):
+            possibilities.add(i)
+    return len(possibilities)
 
 
-def part2(lines):
-    for line in lines:
-        print(line)
+def part2(lower, upper):
+    possibilities = set()
+    for i in range(lower, upper, 1):
+        if rulesPart2(i):
+            possibilities.add(i)
+    return len(possibilities)
 
-def get_input_file():
-    requests_cache.install_cache('../cache')
-    path = os.path.abspath(__file__).split('/')
-    url = 'https://adventofcode.com/' + path[-3] + '/day/' + path[-2] + '/input'
-    lines = requests.get(url, cookies={"session": os.environ['SESSION']}).text.strip().splitlines()
-    return lines
+
+def rulesPart1(number):
+    char = [int(d) for d in str(number)]
+    char.sort()
+    if number != int(''.join(str(n) for n in char)):
+        return False
+    counter = Counter(char)
+    result = [i for i, j in counter.items() if j > 1]
+    if len(result) < 1:
+        return False
+    return True
+
+
+def rulesPart2(number):
+    char = [int(d) for d in str(number)]
+    char.sort()
+    if number != int(''.join(str(n) for n in char)):
+        return False
+    counter = Counter(char)
+    result = [i for i, j in counter.items() if j == 2]
+    if len(result) < 1:
+        return False
+    return True
 
 
 def main():
-    lines = get_input_file()
+    lower = 278384
+    upper = 824795
 
-    print(part1(lines))
-    print(part2(lines))
+    print(part1(lower, upper))
+    print(part2(lower, upper))
 
 
 if __name__ == "__main__":
