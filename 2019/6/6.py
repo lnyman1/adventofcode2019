@@ -2,6 +2,7 @@ import os
 import requests
 import requests_cache
 import networkx as nx
+import matplotlib.pyplot as plt
 
 def part1(lines):
     return nx.transitive_closure(create_graph(lines)).size()
@@ -26,6 +27,14 @@ def main():
     print(part1(lines))
     print(part2(lines))
 
+    # Visualisation of graph - not part of AoC question
+    graph = create_graph(lines)
+    pos = nx.spring_layout(graph)
+    nx.draw_networkx_nodes(graph, pos, cmap=plt.get_cmap('jet'), node_size=30)
+    nx.draw_networkx_labels(graph, pos, font_size=6)
+    nx.draw_networkx_edges(graph, pos, edge_color='r', arrows=True)
+    nx.draw_networkx_edges(graph, pos,  arrows=False)
+    plt.show()
 
 if __name__ == "__main__":
     main()
