@@ -27,7 +27,7 @@ Solutions
 *   **Day 4** - Secure Container :                             *([code][19d4c])*
 *   **Day 5** - Sunny with a Chance of Asteroids :             *([code][19d5c])*
 *   **Day 6** - Universal Orbit Map :                          *([code][19d6c])*
-*   **Day 7** - TBC :                                          *([code][19d7c])*
+*   **Day 7** - Amplification Circuit :                        *([code][19d7c])*
 
 [19d1c]: 2019/1/1.py
 [19d2c]: 2019/2/2.py
