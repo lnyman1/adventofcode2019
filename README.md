@@ -30,6 +30,7 @@ Solutions
 *   **Day 7** - Amplification Circuit :                        *([code][19d7c])*
 *   **Day 8** - Space Image Format :                           *([code][19d8c])*
 *   **Day 9** - Sensor Boost :                                 *([code][19d9c])*
+*   **Day 10** - Monitoring Station :                          *([code][19d10c])*
 
 [19d1c]: 2019/1/1.py
 [19d2c]: 2019/2/2.py
@@ -40,5 +41,6 @@ Solutions
 [19d7c]: 2019/7/7.py
 [19d8c]: 2019/8/8.py
 [19d9c]: 2019/9/9.py
+[19d10c]: 2019/10/10.py
 
 </details>
