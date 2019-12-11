@@ -1,14 +1,12 @@
 #!/bin/bash
 
-if [ "$1" != "-d" ]; then
-  usage;
-fi
+set -eu
 
-echo "Generating day$2"
+# What about $1?
 
 newDay="$2"
+echo "Generating day $newDay"
 
-mkdir $newDay
-cp ./template/day.py ./$newDay/"$newDay.py"
-cp ./template/__init__.py ./$newDay/__init__.py
-cp ./template/question.txt ./$newDay/question.txt
+mkdir "$newDay"
+cp template/day.py "$newDay/$newDay.py"
+cp template/__init__.py template/question.txt "$newDay"/
