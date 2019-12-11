@@ -2,6 +2,8 @@
 
 set -eu
 
+cd "$(dirname "$0")"
+
 # What about $1?
 
 newDay="$2"
