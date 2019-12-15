@@ -48,14 +48,14 @@ def new_pos(pos, direction):
     return pos[0] + direction[0], pos[1] + direction[1]
 
 
-def create_grid(game):
+def create_grid(program):
     known_cells = defaultdict(int)
     grid = defaultdict(str)
     pos = (0, 0)
 
-    while not game.halt and sum(known_cells.values()) < 10000:  # arbitrary high number
+    while not program.halt and sum(known_cells.values()) < 10000:  # arbitrary high number
         direction = find_next_area(grid, pos, known_cells)
-        output = game.operation(direction)
+        output = program.operation(direction)
         move = directions[direction]
         known_cells[pos] += 1
 
