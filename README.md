@@ -34,6 +34,7 @@ Solutions
 *   **Day 11** - Space Police :                                *([code][19d11c])*
 *   **Day 12** - The N-Body Problem  :                         *([code][19d12c])*
 *   **Day 13** - Care Package  :                               *([code][19d13c])*
+*   **Day 14** - Space Stoichiometry  :                        *([code][19d14c])*
 
 [19d1c]: 2019/1/1.py
 [19d2c]: 2019/2/2.py
@@ -46,7 +47,8 @@ Solutions
 [19d9c]: 2019/9/9.py
 [19d10c]: 2019/10/10.py
 [19d11c]: 2019/11/11.py
-[19d11c]: 2019/12/12.py
-[19d11c]: 2019/13/13.py
+[19d12c]: 2019/12/12.py
+[19d13c]: 2019/13/13.py
+[19d14c]: 2019/14/14.py
 
 </details>
