@@ -1,6 +1,7 @@
 import math
 import os
 import re
+from collections import defaultdict
 from typing import List
 
 import requests
@@ -39,12 +40,12 @@ def part2(lines):
 
 
 def get_reactions(lines):
-    reactions = []
+    reactions = defaultdict()
     for line in lines:
         inputs, output = line.split(" => ")
         reaction = Reaction([Chemical.parse(i) for i in re.findall(r'\d+ \w+', inputs)],
                             [Chemical.parse(i) for i in re.findall(r'\d+ \w+', output)][0])
-        reactions.append(reaction)
+        reactions[reaction.output.name] = reaction
     return reactions
 
 
@@ -66,12 +67,8 @@ def get_requirement(reactions, quantity):
 
     while len(requirements) != 0:
         req = requirements.pop()
-        amount_required = 0
-        equation = []
-        for reaction in reactions:
-            if reaction.output.name == req.name:
-                equation = reaction
-                amount_required = reaction.output.amount
+        equation = reactions.get(req.name)
+        amount_required = equation.output.amount
 
         available_amount = available[req.name] if req.name in available else 0
         amount_used = min(req.amount, available_amount)
