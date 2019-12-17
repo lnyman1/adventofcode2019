@@ -37,7 +37,7 @@ Solutions
 *   **Day 14** - Space Stoichiometry  :                        *([code][19d14c])*
 *   **Day 15** - Oxygen System  :                              *([code][19d15c])*
 *   **Day 16** - Flawed Frequency Transmission  :              *([code][19d16c])*
-*   **Day 17** - TBC  :              *([code][19d17c])*
+*   **Day 17** - Set and Forget  :                             *([code][19d17c])*
 
 [19d1c]: 2019/1/1.py
 [19d2c]: 2019/2/2.py
