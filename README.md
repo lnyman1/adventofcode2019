@@ -40,6 +40,9 @@ Solutions
 *   **Day 17** - Set and Forget  :                             *([code][19d17c])*
 *   **Day 18** - Many-Worlds Interpretation  :                 *([code][19d18c])*
 *   **Day 19** - Tractor Beam  :                               *([code][19d19c])*
+*   **Day 20** - Donut Maze  :                                 *([code][19d20c])*
+*   **Day 21** - Springdroid Adventure  :                      *([code][19d21c])*
+*   **Day 22** - Slam Shuffle  :                               *([code][19d22c])*
 
 [19d1c]: 2019/1/1.py
 [19d2c]: 2019/2/2.py
@@ -59,6 +62,8 @@ Solutions
 [19d16c]: 2019/16/16.py
 [19d17c]: 2019/17/17.py
 [19d18c]: 2019/18/18.py
-[19d19c]: 2019/19/19.py
+[19d20c]: 2019/20/20.py
+[19d21c]: 2019/21/21.py
+[19d21c]: 2019/22/22.py
 
 </details>
