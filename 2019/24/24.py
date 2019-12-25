@@ -84,12 +84,12 @@ def get_y_coords(i, size):
 
 
 def iterate(grids, iterations, size):
-    new_grids = [{} for _ in range(0, len(grids))]
+    result = [{} for _ in range(len(grids))]
     for depth, grid in enumerate(grids):
         for y in range(size[1] + 1):
             for x in range(size[0] + 1):
-                new_grids[depth][(x, y)] = rules_with_depth(grids, grid, iterations, depth, (x, y), size)
-    return new_grids
+                result[depth][(x, y)] = rules_with_depth(grids, grid, iterations, depth, (x, y), size)
+    return result
 
 
 def add_cell(i, grid, coords, size):
