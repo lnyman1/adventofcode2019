@@ -94,9 +94,7 @@ def iterate(grids, iterations, size):
 
 
 def add_cell(i, grid, coords, size):
-    if i == 0 or i == size:
-        return 1 if coords in grid and grid[coords] == BUG else 0
-    return 0
+    return 1 if (i == 0 or i == size) and coords in grid and grid[coords] == BUG else 0
 
 
 def apply_minute(grid):
