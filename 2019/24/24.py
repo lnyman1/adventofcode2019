@@ -46,7 +46,7 @@ def total_neighbours(grids, coord, depth, iterations, size):
     y = size[1] / 2
     if coord != (x, y):
         for direction in directions.values():
-            neighbours += 1 if grids[depth].get(new_pos(coord, direction), EMPTY) == BUG else 0
+            neighbours += grids[depth].get(new_pos(coord, direction), EMPTY).count(BUG)
 
     higher_level = depth + 1
     if depth < iterations - 1:
