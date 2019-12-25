@@ -53,13 +53,13 @@ def total_neighbours(grids, coord, depth, iterations, size):
             0: (x - 1, y),
             4: (x + 1, y)
         }
-        neighbours += add_cell(coord[0], grids[higher_level], switcher.get(coord[0]), size[0])
+        neighbours += add_bug_in_cell(coord[0], grids[higher_level], switcher.get(coord[0]), size[0])
 
         switcher = {
             0: (x, y - 1),
             4: (x, y + 1)
         }
-        neighbours += add_cell(coord[1], grids[higher_level], switcher.get(coord[1]), size[1])
+        neighbours += add_bug_in_cell(coord[1], grids[higher_level], switcher.get(coord[1]), size[1])
 
     lower_level = depth - 1
     if coord in get_neighbours((x, y)) and depth > 0:
@@ -92,7 +92,7 @@ def iterate(grids, iterations, size):
     return result
 
 
-def add_cell(i, grid, coords, size):
+def add_bug_in_cell(i, grid, coords, size):
     return 1 if (i == 0 or i == size) and coords in grid and grid[coords] == BUG else 0
 
 
