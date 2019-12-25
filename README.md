@@ -44,6 +44,8 @@ Solutions
 *   **Day 21** - Springdroid Adventure  :                      *([code][19d21c])*
 *   **Day 22** - Slam Shuffle  :                               *([code][19d22c])*
 *   **Day 23** - Category Six  :                               *([code][19d23c])*
+*   **Day 24** - Planet of Discord  :                          *([code][19d24c])*
+*   **Day 25** - Cryostasis  :                                 *([code][19d25c])*
 
 [19d1c]: 2019/1/1.py
 [19d2c]: 2019/2/2.py
@@ -68,5 +70,7 @@ Solutions
 [19d21c]: 2019/21/21.py
 [19d22c]: 2019/22/22.py
 [19d23c]: 2019/23/23.py
+[19d24c]: 2019/24/24.py
+[19d25c]: 2019/25/25.py
 
 </details>
